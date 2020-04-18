@@ -212,7 +212,7 @@ header nav a  {
     display:flex;
     align-items:center;
     justify-content:center;
-    background:url("images/bg2.png")
+    
 }
 
 .titre {
@@ -400,7 +400,7 @@ header nav a  {
 	
     overflow: hidden;
     background-color: #635a4e;
-    background:url("images/bg.png");
+    background:url("images/bg.jpg");
 
     background-size: 100%;
 }

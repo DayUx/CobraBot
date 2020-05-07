@@ -1,0 +1,738 @@
+html,
+body {
+    font-family: Nunito Sans;
+    color: #dbdbdb;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 300%;
+    overflow: hidden;
+
+    text-align: center;
+
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    position: relative;
+}
+
+
+@font-face {
+    font-family: "Courrier";
+    src: url("font/cour.ttf");
+}
+
+
+
+/*__________________Header___________________*/
+
+
+#onglet img {
+
+    width: 50px;
+
+    right: -25px;
+    position: absolute;
+    transition: 0.8s all;
+    top: 50%;
+    transform: translate(0, -50%);
+
+
+}
+
+
+.line {
+    margin: 10px auto 10px auto;
+    height: 0px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+    width: 200px;
+}
+
+
+#onglets {
+    opacity:0;
+    z-index: 500;
+
+    position: absolute;
+    background:#fff;
+
+    top: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s all;
+    color: #000;
+
+}
+
+
+#onglets.change {
+    transform: translate(0, 100%);
+        opacity:1;
+
+
+}
+
+
+
+/*_____Menu Normal_____*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____Menu_____*/
+
+
+
+#menu {
+    font-size: 40px;
+    top: 19px;
+    right: 19px;
+    position: absolute;
+    transition: 0.8s all;
+    z-index: 100;
+    color: #39446d;
+    border-right: 3px solid #39446d;
+    border-top: 3px solid #39446d;
+    padding-left: 12px;
+    padding-bottom: 0;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+.bgmenu {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+        
+
+}
+
+
+
+#liens {
+    
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+    width: 90%;
+}
+
+#liens a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+#liens a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+#infoUn {
+    color:#39446d;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 100;
+    left: 29px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 15px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    transition: 0.8s all;
+
+}
+
+#infoUn:hover {
+    opacity: 1;
+    cursor: pointer;
+    color:#39446d;
+
+}
+
+#borderline {
+    position: absolute;
+    z-index: 100;
+    left: 19px;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    width: 3px;
+    background-color: #39446d;
+    transition: 0.8s all;
+
+}
+
+#borderline.change {
+
+
+    height: 100px;
+
+}
+
+
+
+
+
+#infoDeux {
+    opacity: 0.8;
+    position: absolute;
+    z-index: 100;
+    right: 29px;
+    top: 50%;
+    color:#39446d;
+    transform: translate(0, -50%);
+    font-size: 15px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    transition: 0.8s all;
+
+}
+
+#infoDeux:hover {
+    opacity: 1;
+    cursor: pointer;
+    color:#39446d;
+
+}
+
+#borderlinedeux {
+    position: absolute;
+    z-index: 100;
+    right: 19px;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    width: 3px;
+    background-color: #39446d;
+    transition: 0.8s all;
+
+}
+
+#borderlinedeux.change {
+
+
+    height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logomenu {
+    position: relative;
+    margin-top: 1%;
+}
+
+#bordure {
+    position: absolute;
+    background: transparent;
+    overflow: scroll;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #39446d;
+    z-index: 1;
+    transition: 0.8s all;
+}
+
+
+
+#bordure.change {
+    z-index: 1000;
+    background-color: #39446d;
+}
+
+
+
+
+
+#menu:hover {
+    
+    cursor: pointer;
+    padding-bottom: 50px;
+    padding-left: 58px;
+}
+
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: 0.5s all;
+
+}
+
+.close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+.close2 {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: 0.5s all;
+
+}
+
+.close2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.close2:before,
+.close2:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.close2:before {
+    transform: rotate(45deg);
+}
+
+.close2:after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+/*__________________Section1___________________*/
+
+
+
+
+
+
+
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #424242;
+    
+}
+
+.titre {
+    width: 100%;
+    position: absolute;
+    color: #cdcdcd;
+    
+    z-index: 3;
+}
+
+.titre .logo2 {
+    
+   margin-bottom:10%;
+    top:0;
+    
+}
+
+
+
+
+
+
+.start2{
+    width: 100%;
+    position: relative;
+    margin-left: 50%;
+    
+}
+
+.start2 button {
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.9s all;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 0px white;
+
+}
+
+
+
+.start2 button:hover {
+
+    
+    color: #39446d;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 100px white;
+
+}
+
+
+
+
+
+
+
+.txt_sect2_2{
+	text-align:left;
+	font-size:20px;
+	
+	margin-top:2%;
+    margin-bottom:2%;
+	background-color:rgba(0,0,0,0.2);
+	padding:1%;
+	
+	overflow:none;
+	z-index:3;
+	position: relative;
+}
+
+
+
+
+
+/*_____Bouton_____*/
+
+
+
+
+
+
+
+
+
+
+#onglet {
+    background: transparent;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1000;
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    transition: 0.8s all;
+
+}
+
+#onglet.change {
+    transform: translate(100%, 0%);
+        opacity:1;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+p {
+    margin: 100px 5% 0 5%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+
+
+
+#onglettrois {
+    background:transparent;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: 1000;
+    position: absolute;
+    right: -100%;
+    transition: 0.8s all;
+    opacity:0;
+
+}
+
+#onglettrois.change {
+    transform: translate(-100%, 0%);
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.start button {
+    border: 2px solid #39446d;
+    border-radius: 2px;
+    color: #39446d;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.9s all;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 0px #39446d;
+
+}
+
+
+
+.start button:hover {
+
+    background-color: #39446d;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 100px #39446d;
+
+}
+
+
+
+@media all and (max-width: 840px) {
+    .start button {
+        border: 2px solid #39446d;
+        border-radius: 10px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px;
+        transition: 0.7s all;
+        background-color: #39446d;
+
+    }
+
+    .titre .logo2 {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/*_____Fond vidéo_____*/
+
+
+
+
+
+
+
+/*__________________Section2___________________*/
+
+
+
+
+
+/*------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------Flip the phone----------------------------*/
+
+
+@media all and (min-height: 301px) {
+    .FlipPhone {
+        display: none;
+    }
+}
+
+
+
+@media all and (max-height: 300px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .FlipPhone {
+
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        z-index: 1000;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .FlipPhone h1 {
+        color: #dedede;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+
+    }
+
+    .Phone {
+        padding: 0 5% 0 5%;
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+
+
+    }
+
+}
+
+@media all and (min-height: 420px) {
+    .FlipPhone {
+        display: none;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}

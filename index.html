@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -17,135 +16,132 @@
 
 
 <body id=body>
-
-
-   
-
-
-
-
-
-
-
-
     <div class="section">
-        
+
         <div id=bordure>
+            <!-- Cadre dans lequel les pages apparaissent -->
+
+
+
+
+
+            <!------------------------------ Menu ---------------------------->
             <div id=onglets>
-            <a onclick="onClickMenu()" class="close2"></a>
+                <a onclick="onClickMenu()" class="close2"></a>
+                <div class=titremenu>
                 <a class=logo href=#><img class=logomenu src="pictures/cobrabottete.png" height="25%" /></a>
                 <ul id="liens">
+
+                    <li><a onclick="onglet1_2()">À propos</a></li>
                     
-                    <li><a onclick="onglet1()">À propos</a></li>
-                    <div class=line></div>
                     <li><a onclick="onglet2()">Les commandes</a></li>
-                    <div class=line></div>
-                    <li><a onclick="onglet3()">Contenu exclusif</a></li>
+                    
+                    <li><a onclick="onglet3_2()">Contenu exclusif</a></li>
 
                 </ul>
-
-
-
-
-           
-
-        </div>
+                </div>
+            </div>
             <div id=onglet>
-            <a onclick="onglet1()" class="close"></a>
+                <a onclick="onglet1()" class="close"></a>
                 <h1>À propos</h1>
                 <p></p>
-            
-        </div>
-            <div id=onglettrois><a onclick="onglet3()" class="close"></a>
-                <h1>Connexion</h1>
-                
-                
-                
-                <h1 id = "titrepage2">Accès au panneau administrateur</h1>
-	<h2 id= "titrepage2">
-		Connexion en tant qu'Administrateur d'un serveur :
-	</h2>
-	<div class="txt_sect2_2">
-		<p>
-		En tant qu'administrateur d'un serveur discord, vous pouvez avoir envie de créer des commandes personnalisées. C'est pour cela que nous mettons à votre disposition un panneau de configuration.</br> Ainsi, vous pourrez modifier ou voir les informations suivantes : 
-		
-		<ul>
-			<li>Le préfixe du bot</li>
-			<li>Le salon règlement</li>
-			<li>La liste des membres</li>
-			<li>Et bien plus à venir</li>
-		</ul>
-		Vous pouvez vous connecter via le bouton ci-dessous.
-		</p>
-		<div class=start2>
-			<button onclick="javascript:buttonCommand()">Se connecter</button>
-		</div>
-	</div>
-
-	
-             
-                
-                
-             <div class="titrepage2_2">
-		<h2>
-			Connexion en tant que développeur :
-		</h2>
-	</div>
-	<div class="txt_sect2_2">
-		<p>
-		Cette connexion est réservée aux développeurs du bot.
-		</br> Ils ont accès aux données suivantes :
-		<ul>
-			<li>La liste des serveurs</li>
-			<li>Les salons règlements</li>
-			<li>Les préfixes</li>
-			<li>Et peut-être bien plus dans les prochaines mises à jour</li>
-		</ul>
-		</p>
-		<div class="start2">
-			<button onclick="javascript:buttonCommand()">Se connecter</button>
-		</div>
-	</div>	   
-                
-                
-                
-                
-                
             </div>
 
+
+
+
+            <!------------------------------ Onglet Se Connecter ---------------------------->
+
+
+
+            <div id=onglettrois><a onclick="onglet3()" class="close"></a>
+                <h1>Connexion</h1>
+
+
+                <!------------------------------ Connexion Admin ---------------------------->
+                <h1 id="titrepage2">Accès au panneau administrateur</h1>
+                <h2 id="titrepage2">
+                    Connexion en tant qu'Administrateur d'un serveur :
+                </h2>
+                <div class="txt_sect2_2">
+                    <p>
+                        En tant qu'administrateur d'un serveur discord, vous pouvez avoir envie de créer des commandes personnalisées. C'est pour cela que nous mettons à votre disposition un panneau de configuration.</br> Ainsi, vous pourrez modifier ou voir les informations suivantes :
+
+                        <ul>
+                            <li>Le préfixe du bot</li>
+                            <li>Le salon règlement</li>
+                            <li>La liste des membres</li>
+                            <li>Et bien plus à venir</li>
+                        </ul>
+                        Vous pouvez vous connecter via le bouton ci-dessous.
+                    </p>
+                    <div class=start2>
+                        <button onclick="javascript:buttonCommand()">Se connecter</button>
+                    </div>
+                </div>
+
+
+
+
+                <!------------------------------ Connexion developpeur ---------------------------->
+                <div class="titrepage2_2">
+                    <h2>
+                        Connexion en tant que développeur :
+                    </h2>
+                </div>
+                <div class="txt_sect2_2">
+                    <p>
+                        Cette connexion est réservée aux développeurs du bot.
+                        </br> Ils ont accès aux données suivantes :
+                        <ul>
+                            <li>La liste des serveurs</li>
+                            <li>Les salons règlements</li>
+                            <li>Les préfixes</li>
+                            <li>Et peut-être bien plus dans les prochaines mises à jour</li>
+                        </ul>
+                    </p>
+                    <div class="start2">
+                        <button onclick="javascript:buttonCommand()">Se connecter</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+        <!------------------------------ Bouton Menu, A propos et se connecter ---------------------------->
         <div id="menu" onclick="onClickMenu()">
             ☰</div>
         <a onclick="onglet1()" onmouseover=line1() onmouseout=line1() id=infoUn>A propos</a>
         <div id=borderline></div>
         <a onclick="onglet3()" onmouseover=line2() onmouseout=line2() id=infoDeux>Se connecter</a>
         <div id=borderlinedeux></div>
-        
-        
-        
+
+
+        <!------------------------------ Logo et bouton au centre de l'ecran quand on arrive sur le site ---------------------------->
         <div class="titre">
             <img class=logo2 src="pictures/cobrabot.svg" width=40% />
 
 
 
             <div class=start>
-                
+
                 <button href='#'>
                     <div>C'EST PARTI !</div>
                 </button>
             </div>
-
-
         </div>
 
-
+        <!------------------------------ arriere plan anime ---------------------------->
         <div class="container">
             <ul id="scene">
                 <li class="layer" data-depth=".01"><img src="pictures/1.png"></li>
                 <li class="layer" data-depth=".02"><img src="pictures/2.png"></li>
                 <li class="layer" data-depth=".03"><img src="pictures/3.png"></li>
                 <li class="layer" data-depth=".04"><img src="pictures/4.png"></li>
-                <li class="layer" data-depth=".1"><img src="pictures/5.png"></li>
+                <li class="layer" data-depth=".10"><img src="pictures/5.png"></li>
                 <li class="layer" data-depth=".47"><img src="pictures/6.png"></li>
                 <li class="layer" data-depth=".39"><img src="pictures/7.png"></li>
                 <li class="layer" data-depth=".16"><img src="pictures/8.png"></li>
@@ -156,21 +152,37 @@
                 <li class="layer" data-depth=".21"><img src="pictures/13.png"></li>
             </ul>
         </div>
-
-
-
-
     </div>
+
+
+
+
+    <!------------------------------ arriere plan anime ---------------------------->
     <script src="global.js"></script>
+
+
+
+
+    <!-- Script arriere plan (vient de github et est libre d'utilisation) -->
     <script src="parallax.js"></script>
     <script>
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
     </script>
-    <script language= "javascript" type = "text/javascript">
- <!-- script pour le bouton -->
- function buttonCommand(){
-	alert("Les développeurs Olivier, Louka, et Paul n'ont pas fini de développer cette partie du site internet.")
- }
-</script>
+
+
+
+
+    <!-- script pour le bouton -->
+    <script language="javascript" type="text/javascript">
+        function
+        buttonCommand() {
+            alert("Les développeurs Olivier, Louka,  et Paul n'ont pas fini de développer cette partie du site internet.")
+            }
+    </script>
+
+
+
+
+
 </body>

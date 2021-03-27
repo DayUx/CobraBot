@@ -1,1 +1,3 @@
-Ouvrez le fichier index.html, je vous conseille d'utiliser le navigateur chrome pour une experience optimale
+Site web pour gerer le bot discord CobraBot qui etait notre projet d'ISN en 2019
+
+https://dayux.github.io/CobraBot/
